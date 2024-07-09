@@ -1,13 +1,14 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include "budgetbalance.h"
 
-//The file's to make
-#include "BandBudget.h"
+/*The file's to make
 #include "ercussion.h"
 #include "Brass.h"
 #include "Woodwind.h"
 #include "Stringed.h"
+*/
 
 using namespace std;
 
@@ -47,7 +48,7 @@ int main() {
     cout << "initial budge: ";
     cin >> initialBudget;
 
-    BandBudget bandBudget(initialBudget);
+    BudgetBalance bandBudget(initialBudget);
 
     string instrumentType, instrumentName;
     double instrumentCost;
@@ -68,7 +69,7 @@ int main() {
 
             auto instrument = createInstrument(instrumentType, instrumentName, instrumentCost);
             if (instrument) {
-                bandBudget.addInstrument(instrument);
+                //bandBudget.addInstrument(instrument);
                 cout << "added" << endl;
             } else {
                 cout << "error: invalid" << endl;
@@ -78,7 +79,7 @@ int main() {
         } else if (choice == 2) {
             cout << "instrument name to remove: ";
             cin >> instrumentName;
-            bandBudget.removeInstrument(instrumentName);
+            //bandBudget.removeInstrument(instrumentName);
             cout << "deleted" << endl;
 
         //budget check
