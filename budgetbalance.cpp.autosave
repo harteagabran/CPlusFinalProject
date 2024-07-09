@@ -1,0 +1,21 @@
+#include "budgetbalance.h"
+
+BudgetBalance::BudgetBalance(double initial) {
+    budget = initial;
+    totalExpense = 0.0;
+    remaining = budget;
+}
+
+//Adds tothe budget
+void BudgetBalance::addToBudget(double amount) {
+    budget += amount;
+    remaining = budget - totalExpense;
+}
+
+//gets total Expenses
+double BudgetBalance::getTotalExpenses() {
+    return totalExpense;
+}
+
+//get remaining balance
+double BudgetBalance::getBal
