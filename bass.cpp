@@ -1,4 +1,4 @@
-#include "bass.h"
+er#include "bass.h"
 #include <iostream>
 #include <map>
 #include <string>
@@ -17,10 +17,10 @@ Bass::Bass(std::string selection, double cost) {
 void Bass::bassSelection() {
 
     std::map<std::string, double>basses;
-    basses[""] = 0;
-    basses[""] = 0;
-    basses[""] = 0;
-    basses[""] = 0;
+    basses["Fender Player II Jazz"] = 799.99;
+    basses["Fender Player II Precision"] = 799.99;
+    basses["Squier Classic Vibe"] = 469.99;
+    basses["Ernie Ball Music Man StingRay5"] = 2,699.00;
 
     if (basses.count(name) > 0) {
         std::cout << "You have selected " << name << " which costs $" << bassCost << std::endl;
@@ -36,10 +36,10 @@ void Bass::bassSelection() {
 //display map of basses
 void Bass::displayBasses() {
     std::map<std::string, double>basses;
-    basses[""] = 0;
-    basses[""] = 0;
-    basses[""] = 0;
-    basses[""] = 0;
+    basses["Fender Player II Jazz"] = 799.99;
+    basses["Fender Player II Precision"] = 799.99;
+    basses["Squier Classic Vibe"] = 469.99;
+    basses["Ernie Ball Music Man StingRay5"] = 2,699.00;
 
     std::map<std::string, double>::iterator it = basses.begin();
 
