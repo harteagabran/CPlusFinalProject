@@ -16,10 +16,10 @@ Guitar::Guitar(std::string selection, double cost) {
 void Guitar::guitarSelection() {
     std::map<std::string, double>guitars;
 
-    guitars[""] = 0;
-    guitars[""] = 0;
-    guitars[""] = 0;
-    guitars[""] = 0;
+    guitars["Fender Player II Stratocaster"] = 799.99;
+    guitars["Fender Player II Telecaster"] = 799.99;
+    guitars["EVH SA-126"] = 1799.99;
+    guitars["Gretsch Guitars G5427T"] = 899.99;
 
     if (guitars.count(name) > 0) {
         std::cout << "You have selected " << name << " which costs $" << guitarCost << std::endl;
