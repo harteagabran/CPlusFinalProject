@@ -16,10 +16,10 @@ Keyboard::Keyboard(std::string selection, double cost) {
 void Keyboard::keyboardSelection() {
     std::map<std::string, double>keyboards;
 
-    keyboards[""] = 0;
-    keyboards[""] = 0;
-    keyboards[""] = 0;
-    keyboards[""] = 0;
+    keyboards["Yamaha PSR-E473"] = 369.99 ;
+    keyboards["Yamaha PSR-SX600"] = 1099.99;
+    keyboards["Yamaha PSR SX700"] = 1599.99;
+    keyboards["Yamaha PSR SX900"] = 2299.99;
     if (keyboards.count(name) > 0) {
         std::cout << "You have selected " << name << " which costs $" << keyboardCost << std::endl;
     }
@@ -35,10 +35,10 @@ void Keyboard::keyboardSelection() {
 void Keyboard::displayKeyboards() {
     std::map<std::string, double>keyboards;
 
-    keyboards[""] = 0;
-    keyboards[""] = 0;
-    keyboards[""] = 0;
-    keyboards[""] = 0;
+    keyboards["Yamaha PSR-E473"] = 369.99 ;
+    keyboards["Yamaha PSR-SX600"] = 1099.99;
+    keyboards["Yamaha PSR SX700"] = 1599.99;
+    keyboards["Yamaha PSR SX900"] = 2299.99;
 
     std::map<std::string, double>::iterator it = keyboards.begin();
 
