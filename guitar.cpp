@@ -36,10 +36,10 @@ void Guitar::guitarSelection() {
 void Guitar::displayGuitars() {
     std::map<std::string, double>guitars;
 
-    guitars[""] = 0;
-    guitars[""] = 0;
-    guitars[""] = 0;
-    guitars[""] = 0;
+    guitars["Fender Player II Stratocaster"] = 799.99;
+    guitars["Fender Player II Telecaster"] = 799.99;
+    guitars["EVH SA-126"] = 1799.99;
+    guitars["Gretsch Guitars G5427T"] = 899.99;
 
     std::map<std::string, double>::iterator it = guitars.begin();
 
