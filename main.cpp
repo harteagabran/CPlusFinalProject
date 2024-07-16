@@ -2,16 +2,23 @@
 #include <memory>
 #include <string>
 #include "budgetbalance.h"
+#include "Drumset.h"
+#include "bass.h"
+#include "guitar.h"
+#include "keyboard.h"
 
-/*The file's to make
-#include "ercussion.h"
-#include "Brass.h"
-#include "Woodwind.h"
-#include "Stringed.h"
-*/
 
 using namespace std;
 
+class Instrument {
+private:
+    string* type;
+    string* name;
+    double cost;
+public:
+    Instrument(string* type, string* name, double cost):
+        type(type), name(name), cost(cost){}
+};
 
 //MENU
 void displayMenu() {
@@ -28,14 +35,14 @@ void displayMenu() {
 //not sure what exactly do they want for their band so i just classified them by type
 //OBJECT making instruments
 shared_ptr<Instrument> createInstrument(const string& type, const string& name, double cost) {
-    if (type == "Percussion") {
-        return make_shared<Percussion>(name, cost);
-    } else if (type == "Brass") {
-        return make_shared<Brass>(name, cost);
-    } else if (type == "Woodwind") {
-        return make_shared<Woodwind>(name, cost);
-    } else if (type == "Stringed") {
-        return make_shared<Stringed>(name, cost);
+    if (type == "Drumset") {
+        return make_shared<Drumset>(name, cost);
+    } else if (type == "Bass") {
+        return make_shared<Bass>(name, cost);
+    } else if (type == "Guitar") {
+        return make_shared<Guitar>(name, cost);
+    } else if (type == "Keyboard") {
+        return make_shared<Keyboard>(name, cost);
     } else {
         return nullptr; //make's it valid or not
     }
@@ -45,7 +52,7 @@ shared_ptr<Instrument> createInstrument(const string& type, const string& name, 
 //Main
 int main() {
     double initialBudget;
-    cout << "initial budge: ";
+    cout << "initial budget: ";
     cin >> initialBudget;
 
     BudgetBalance bandBudget(initialBudget);
@@ -75,18 +82,18 @@ int main() {
                 cout << "error: invalid" << endl;
             }
 
-        // delete instrument
+            // delete instrument
         } else if (choice == 2) {
             cout << "instrument name to remove: ";
             cin >> instrumentName;
             //bandBudget.removeInstrument(instrumentName);
             cout << "deleted" << endl;
 
-        //budget check
+            //budget check
         } else if (choice == 3) {
             bandBudget.displayBudget();
 
-        //quit
+            //quit
         } else if (choice == 4) {
             break;
 
