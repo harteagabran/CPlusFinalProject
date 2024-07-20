@@ -18,7 +18,6 @@ public:
 
     virtual void displayMap() = 0;
 
-
     virtual double returnCost() = 0;
 
     static Instrument* createInstrument();

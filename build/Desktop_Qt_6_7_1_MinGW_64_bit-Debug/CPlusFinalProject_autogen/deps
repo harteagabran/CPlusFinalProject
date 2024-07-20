@@ -86,6 +86,7 @@ CPlusFinalProject_autogen/timestamp: \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/CMakeLists.txt \
+	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/Drumset.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/bass.cpp \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/bass.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/budgetbalance.cpp \
@@ -94,12 +95,13 @@ CPlusFinalProject_autogen/timestamp: \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
-	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/drumset.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/dumset.cpp \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/guitar.cpp \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/guitar.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/instrument.cpp \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/instrument.h \
+	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/inventory.cpp \
+	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/inventory.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/keyboard.cpp \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/keyboard.h \
 	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/main.cpp \

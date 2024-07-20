@@ -22,6 +22,7 @@ add_executable(CPlusFinalProject
   guitar.h guitar.cpp
   keyboard.h keyboard.cpp
   instrument.cpp
+  inventory.h inventory.cpp
 )
 target_link_libraries(CPlusFinalProject Qt${QT_VERSION_MAJOR}::Core)
 
