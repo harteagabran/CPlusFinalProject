@@ -1,22 +1,19 @@
 #ifndef GUITAR_H
 #define GUITAR_H
-#include<string>
-#include <memory>
-class Guitar
+
+#include "instrument.h"
+
+class Guitar : public Instrument
 {
-public:
-
-    Guitar(std::string selection, double cost);
-
-
-
-    void guitarSelection();
-
-    void displayGuitars();
 private:
-    std::string name;
+    string name;
     double guitarCost;
-
+public:
+    Guitar(string name, double guitarCost);
+    void printSelection(map<string, double> selectedItems);
+    void removeSelection(map<string, double> selectedItems);
+    void displayMap();
+    double returnCost();
 };
 
 #endif // GUITAR_H

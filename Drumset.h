@@ -1,22 +1,18 @@
 #ifndef DRUMSET_H
 #define DRUMSET_H
-#include<string>
-#include <memory>
-class Drumset
-{
-public:
 
-    Drumset(std::string selection, double cost);
+#include "instrument.h"
 
-
-
-    void drumSelection();
-
-    void displayDrumsets();
+class Drumset : public Instrument {
 private:
-    std::string name;
+    string name;
     double drumCost;
-
+public:
+    Drumset(string name, double drumCost);
+    void printSelection(map<string, double> selectedItems);
+    void removeSelection(map<string, double> selectedItems);
+    void displayMap();
+    double returnCost();
 };
 
 #endif // DRUMSET_H

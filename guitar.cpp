@@ -1,52 +1,49 @@
 #include "guitar.h"
-#include <iostream>
-#include <map>
-#include <string>
-#include <memory>
 
-Guitar::Guitar(std::string selection, double cost) {
-    name = selection;
-    guitarCost = cost;
+Guitar::Guitar(string name, double guitarCost) : name(name), guitarCost(guitarCost) { }
 
-}
-//map of each selection
-
-
-// Validates and confirms users selection
-void Guitar::guitarSelection() {
-    std::map<std::string, double>guitars;
-
-    guitars["Fender Player II Stratocaster"] = 799.99;
-    guitars["Fender Player II Telecaster"] = 799.99;
-    guitars["EVH SA-126"] = 1799.99;
-    guitars["Gretsch Guitars G5427T"] = 899.99;
+void Guitar::printSelection(map<string, double> selectedItems) {
+    map<string, double> guitars;
+    guitars["Stratocaster"] = 799;
+    guitars["Telecaster"] = 799;
+    guitars["SA-126"] = 1799;
+    guitars["G5427T"] = 899;
 
     if (guitars.count(name) > 0) {
-        std::cout << "You have selected " << name << " which costs $" << guitarCost << std::endl;
-    }
-    else {
-        std::cout << name << " is not an available option please try again." << std::endl;
+        cout << "You have selected " << name << " which costs $" << guitarCost << endl;
+        selectedItems[name] = guitarCost;
+    } else {
+        cout << name << " is not an available option please try again." << endl;
+        guitarCost = 0;
     }
 }
 
+void Guitar::removeSelection(map<string, double> selectedItems) {
+    if (selectedItems.count(name) > 0) {
+        cout << "You have removed " << name << " from the budget." << endl;
+        selectedItems.erase(name);
+    } else {
+        cout << name << " not found." << endl;
+        guitarCost = 0;
+    }
+}
 
+void Guitar::displayMap() {
+    map<string, double> guitars;
+    guitars["Stratocaster"] = 799;
+    guitars["Telecaster"] = 799;
+    guitars["SA-126"] = 1799;
+    guitars["G5427T"] = 899;
 
-
-//display map of guitars
-void Guitar::displayGuitars() {
-    std::map<std::string, double>guitars;
-
-    guitars["Fender Player II Stratocaster"] = 799.99;
-    guitars["Fender Player II Telecaster"] = 799.99;
-    guitars["EVH SA-126"] = 1799.99;
-    guitars["Gretsch Guitars G5427T"] = 899.99;
-
-    std::map<std::string, double>::iterator it = guitars.begin();
+    map<string, double>::iterator it = guitars.begin();
 
     while (it != guitars.end()) {
-        std::cout << "Guitar Name: " << it->first
-                  << ", Cost: $" << it->second << std::endl;
+        cout << "Guitar Name: " << it->first
+             << ", Cost: $" << it->second << endl;
         ++it;
     }
+}
 
+double Guitar::returnCost() {
+    return guitarCost;
 }

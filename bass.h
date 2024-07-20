@@ -1,21 +1,19 @@
 #ifndef BASS_H
 #define BASS_H
-#include<string>
-#include <memory>
-class Bass
+
+#include "instrument.h"
+
+class Bass : public Instrument
 {
-public:
-
-    Bass(std::string selection, double cost);
-
-
-
-    void bassSelection();
-
-    void displayBasses();
 private:
-    std::string name;
+    string name;
     double bassCost;
-
+public:
+    Bass(string name, double bassCost);
+    void printSelection(map<string, double> selectedItems);
+    void removeSelection(map<string, double> selectedItems);
+    void displayMap();
+    double returnCost();
 };
+
 #endif // BASS_H

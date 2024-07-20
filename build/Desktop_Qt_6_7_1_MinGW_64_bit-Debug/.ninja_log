@@ -1,11 +1,25 @@
-# ninja log v5
-2	135	7421954409024501	CPlusFinalProject_autogen/timestamp	f49e4f0cbc8f15bb
-2	135	7421954409024501	CPlusFinalProject_autogen/mocs_compilation.cpp	f49e4f0cbc8f15bb
-2	135	7421954409024501	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/timestamp	f49e4f0cbc8f15bb
-2	135	7421954409024501	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/mocs_compilation.cpp	f49e4f0cbc8f15bb
-135	189	7421954409857599	CMakeFiles/CPlusFinalProject.dir/CPlusFinalProject_autogen/mocs_compilation.cpp.obj	343cd8e6705090b0
-7	100	7421956085831214	CPlusFinalProject_autogen/timestamp	f49e4f0cbc8f15bb
-7	100	7421956085831214	CPlusFinalProject_autogen/mocs_compilation.cpp	f49e4f0cbc8f15bb
-7	100	7421956085831214	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/timestamp	f49e4f0cbc8f15bb
-7	100	7421956085831214	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/mocs_compilation.cpp	f49e4f0cbc8f15bb
-106	494	7421956089777952	CMakeFiles/CPlusFinalProject.dir/budgetbalance.cpp.obj	1c655ad6c4711246
+# ninja log v6
+32	2117	7432069384065040	build.ninja	2337afa29ccf73e
+33	179	7432038435398447	CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+186	836	7432038435873919	CMakeFiles/CPlusFinalProject.dir/main.cpp.obj	93849820b750b4db
+33	179	7432038435398447	CPlusFinalProject_autogen/timestamp	539983a518884ac1
+33	179	7432038435398447	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/timestamp	539983a518884ac1
+33	179	7432038435398447	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+183	230	7432038435852537	CMakeFiles/CPlusFinalProject.dir/CPlusFinalProject_autogen/mocs_compilation.cpp.obj	343cd8e6705090b0
+189	519	7432038435910766	CMakeFiles/CPlusFinalProject.dir/budgetbalance.cpp.obj	1c655ad6c4711246
+836	1019	7432038442386053	CPlusFinalProject.exe	65d0a689362f246f
+24	125	7432080706498532	CPlusFinalProject_autogen/timestamp	539983a518884ac1
+24	125	7432080706498532	CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+24	125	7432080706498532	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/timestamp	539983a518884ac1
+24	125	7432080706498532	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+144	1227	7432080707710123	CMakeFiles/CPlusFinalProject.dir/instrument.cpp.obj	a6179063a61d9ee8
+127	1236	7432080707527102	CMakeFiles/CPlusFinalProject.dir/main.cpp.obj	93849820b750b4db
+130	1249	7432080707562421	CMakeFiles/CPlusFinalProject.dir/dumset.cpp.obj	d295dc55b290f247
+133	1267	7432080707593768	CMakeFiles/CPlusFinalProject.dir/bass.cpp.obj	876aed69e70889
+18	106	7432081213710238	CPlusFinalProject_autogen/timestamp	539983a518884ac1
+18	106	7432081213710238	CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+18	106	7432081213710238	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/timestamp	539983a518884ac1
+18	106	7432081213710238	C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/mocs_compilation.cpp	539983a518884ac1
+110	616	7432081214631942	CMakeFiles/CPlusFinalProject.dir/keyboard.cpp.obj	87114a08d2506501
+107	639	7432081214600659	CMakeFiles/CPlusFinalProject.dir/guitar.cpp.obj	82603ef5e558964e
+639	901	7432081219921707	CPlusFinalProject.exe	bb46bab5b5a7bdc4
