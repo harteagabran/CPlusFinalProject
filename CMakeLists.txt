@@ -15,6 +15,13 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 add_executable(CPlusFinalProject
   main.cpp
   budgetbalance.h budgetbalance.cpp
+  instrument.h
+  dumset.cpp
+  drumset.h
+  bass.h bass.cpp
+  guitar.h guitar.cpp
+  keyboard.h keyboard.cpp
+  instrument.cpp
 )
 target_link_libraries(CPlusFinalProject Qt${QT_VERSION_MAJOR}::Core)
 

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-a69bb0eaec7e0f769c86.json",
+					"jsonFile" : "directory-.-Debug-2163568eb1dcc63cdc7f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPlusFinalProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPlusFinalProject-Debug-fef7e8ff8a2b3a6d9b6e.json",
+					"jsonFile" : "target-CPlusFinalProject-Debug-69f6b20310c37d952634.json",
 					"name" : "CPlusFinalProject",
 					"projectIndex" : 0
 				},
@@ -58,7 +58,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPlusFinalProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPlusFinalProject_autogen_timestamp_deps-Debug-f1d1392c7132dcfab16e.json",
+					"jsonFile" : "target-CPlusFinalProject_autogen_timestamp_deps-Debug-4158f38275a7df12c635.json",
 					"name" : "CPlusFinalProject_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
@@ -74,6 +74,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

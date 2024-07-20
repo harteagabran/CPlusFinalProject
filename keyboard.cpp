@@ -1,51 +1,49 @@
 #include "keyboard.h"
-#include <iostream>
-#include <map>
-#include <string>
-#include <memory>
 
-Keyboard::Keyboard(std::string selection, double cost) {
-    name = selection;
-    keyboardCost = cost;
+Keyboard::Keyboard(string name, double keyboardCost) : name(name), keyboardCost(keyboardCost) { }
 
-}
-//map of each selection
+void Keyboard::printSelection(map<string, double> selectedItems) {
+    map<string, double> keyboards;
+    keyboards["PSR-E473"] = 369;
+    keyboards["PSR-SX600"] = 1099;
+    keyboards["PSR-SX700"] = 1599;
+    keyboards["PSR-SX900"] = 2299;
 
-
-// Validates and confirms users selection
-void Keyboard::keyboardSelection() {
-    std::map<std::string, double>keyboards;
-
-    keyboards["Yamaha PSR-E473"] = 369.99 ;
-    keyboards["Yamaha PSR-SX600"] = 1099.99;
-    keyboards["Yamaha PSR SX700"] = 1599.99;
-    keyboards["Yamaha PSR SX900"] = 2299.99;
     if (keyboards.count(name) > 0) {
-        std::cout << "You have selected " << name << " which costs $" << keyboardCost << std::endl;
-    }
-    else {
-        std::cout << name << " is not an available option please try again." << std::endl;
+        cout << "You have selected " << name << " which costs $" << keyboardCost << endl;
+        selectedItems[name] = keyboardCost;
+    } else {
+        cout << name << " is not an available option please try again." << endl;
+        keyboardCost = 0;
     }
 }
 
+void Keyboard::removeSelection(map<string, double> selectedItems) {
+    if (selectedItems.count(name) > 0) {
+        cout << "You have removed " << name << " from the budget." << endl;
+        selectedItems.erase(name);
+    } else {
+        cout << name << " not found." << endl;
+        keyboardCost = 0;
+    }
+}
 
+void Keyboard::displayMap() {
+    map<string, double> keyboards;
+    keyboards["PSR-E473"] = 369;
+    keyboards["PSR-SX600"] = 1099;
+    keyboards["PSR-SX700"] = 1599;
+    keyboards["PSR-SX900"] = 2299;
 
-
-//display map of keyboards
-void Keyboard::displayKeyboards() {
-    std::map<std::string, double>keyboards;
-
-    keyboards["Yamaha PSR-E473"] = 369.99 ;
-    keyboards["Yamaha PSR-SX600"] = 1099.99;
-    keyboards["Yamaha PSR SX700"] = 1599.99;
-    keyboards["Yamaha PSR SX900"] = 2299.99;
-
-    std::map<std::string, double>::iterator it = keyboards.begin();
+    map<string, double>::iterator it = keyboards.begin();
 
     while (it != keyboards.end()) {
-        std::cout << "Keyboard Name: " << it->first
-                  << ", Cost: $" << it->second << std::endl;
+        cout << "Keyboard Name: " << it->first
+             << ", Cost: $" << it->second << endl;
         ++it;
     }
+}
 
+double Keyboard::returnCost() {
+    return keyboardCost;
 }

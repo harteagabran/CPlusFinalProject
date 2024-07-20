@@ -1,22 +1,18 @@
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
-#include <string>
-#include <memory>
-class Keyboard
-{
-public:
 
-    Keyboard(std::string selection, double cost);
+#include "instrument.h"
 
-
-
-    void keyboardSelection();
-
-    void displayKeyboards();
+class Keyboard : public Instrument {
 private:
-    std::string name;
+    string name;
     double keyboardCost;
-
+public:
+    Keyboard(string name, double keyboardCost);
+    void printSelection(map<string, double> selectedItems);
+    void removeSelection(map<string, double> selectedItems);
+    void displayMap();
+    double returnCost();
 };
 
 #endif // KEYBOARD_H
