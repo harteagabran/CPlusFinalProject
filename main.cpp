@@ -24,12 +24,16 @@ void displayMenu() {
 }
 
 
+
 class Instrument {
 private:
 public:
-
+    // prints the selection and the cost and is supposed to add it to the map of selected items.
+    
     virtual void printSelection(map<string, double> selectedItems) = 0;
-
+    
+    // Supposed to check map for the inputted item and remove it.
+    
     virtual void removeSelection(map<string,double> selectedItems) = 0;
 
     virtual void displayMap() = 0;
@@ -100,7 +104,7 @@ public:
 
 
 };
-// Zach - added if statements to differentiate whether the number was black or not
+
 class Bass : public Instrument {
 private:
     string name;
@@ -162,7 +166,7 @@ public:
     }
 
 };
-// Zach - added if statements to differentiate whether the number was green or not
+
 class Guitar : public Instrument {
 private:
     string name;
@@ -226,7 +230,6 @@ public:
     }
 
 };
-// Zach - removed the if statements for colors because they were not necessary if the player chose to bet on a number
 class Keyboard : public Instrument {
 private:
     string name;
