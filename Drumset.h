@@ -13,6 +13,7 @@ public:
     void removeSelection(map<string, double> selectedItems);
     void displayMap();
     double returnCost();
+    string returnName(); //Halmar
 };
 
 #endif // DRUMSET_H

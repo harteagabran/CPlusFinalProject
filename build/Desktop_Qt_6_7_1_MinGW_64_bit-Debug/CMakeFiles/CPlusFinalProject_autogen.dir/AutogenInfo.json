@@ -141,6 +141,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/Drumset.h",
+			"MU",
+			"EWIEGA46WW/moc_Drumset.cpp",
+			null
+		],
+		[
 			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/bass.h",
 			"MU",
 			"EWIEGA46WW/moc_bass.cpp",
@@ -153,12 +159,6 @@
 			null
 		],
 		[
-			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/drumset.h",
-			"MU",
-			"EWIEGA46WW/moc_drumset.cpp",
-			null
-		],
-		[
 			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/guitar.h",
 			"MU",
 			"EWIEGA46WW/moc_guitar.cpp",
@@ -168,6 +168,12 @@
 			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/instrument.h",
 			"MU",
 			"EWIEGA46WW/moc_instrument.cpp",
+			null
+		],
+		[
+			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/inventory.h",
+			"MU",
+			"EWIEGA46WW/moc_inventory.cpp",
 			null
 		],
 		[
@@ -265,6 +271,11 @@
 		],
 		[
 			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/instrument.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/inventory.cpp",
 			"MU",
 			null
 		],

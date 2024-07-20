@@ -113,6 +113,14 @@ build CMakeFiles/CPlusFinalProject.dir/instrument.cpp.obj: CXX_COMPILER__CPlusFi
   OBJECT_DIR = CMakeFiles\CPlusFinalProject.dir
   OBJECT_FILE_DIR = CMakeFiles\CPlusFinalProject.dir
 
+build CMakeFiles/CPlusFinalProject.dir/inventory.cpp.obj: CXX_COMPILER__CPlusFinalProject_unscanned_Debug C$:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/inventory.cpp || cmake_object_order_depends_target_CPlusFinalProject
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\CPlusFinalProject.dir\inventory.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kumar/OneDrive/Documents/DMACC/C++/CPlusAdvFinal/CPlusFinalProject/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CPlusFinalProject_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++
+  OBJECT_DIR = CMakeFiles\CPlusFinalProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPlusFinalProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPlusFinalProject
@@ -121,7 +129,7 @@ build CMakeFiles/CPlusFinalProject.dir/instrument.cpp.obj: CXX_COMPILER__CPlusFi
 #############################################
 # Link the executable CPlusFinalProject.exe
 
-build CPlusFinalProject.exe: CXX_EXECUTABLE_LINKER__CPlusFinalProject_Debug CMakeFiles/CPlusFinalProject.dir/CPlusFinalProject_autogen/mocs_compilation.cpp.obj CMakeFiles/CPlusFinalProject.dir/main.cpp.obj CMakeFiles/CPlusFinalProject.dir/budgetbalance.cpp.obj CMakeFiles/CPlusFinalProject.dir/dumset.cpp.obj CMakeFiles/CPlusFinalProject.dir/bass.cpp.obj CMakeFiles/CPlusFinalProject.dir/guitar.cpp.obj CMakeFiles/CPlusFinalProject.dir/keyboard.cpp.obj CMakeFiles/CPlusFinalProject.dir/instrument.cpp.obj | C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a || CPlusFinalProject_autogen CPlusFinalProject_autogen_timestamp_deps
+build CPlusFinalProject.exe: CXX_EXECUTABLE_LINKER__CPlusFinalProject_Debug CMakeFiles/CPlusFinalProject.dir/CPlusFinalProject_autogen/mocs_compilation.cpp.obj CMakeFiles/CPlusFinalProject.dir/main.cpp.obj CMakeFiles/CPlusFinalProject.dir/budgetbalance.cpp.obj CMakeFiles/CPlusFinalProject.dir/dumset.cpp.obj CMakeFiles/CPlusFinalProject.dir/bass.cpp.obj CMakeFiles/CPlusFinalProject.dir/guitar.cpp.obj CMakeFiles/CPlusFinalProject.dir/keyboard.cpp.obj CMakeFiles/CPlusFinalProject.dir/instrument.cpp.obj CMakeFiles/CPlusFinalProject.dir/inventory.cpp.obj | C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a || CPlusFinalProject_autogen CPlusFinalProject_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = C:/Qt/6.7.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPlusFinalProject.dir
