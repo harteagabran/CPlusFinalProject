@@ -4,6 +4,7 @@
 Inventory::Inventory(BudgetBalance& budget) : nextId(1), budget(budget) {}
 
 void Inventory::addInstrument(shared_ptr<Instrument> instrument) {
+
     //add instrument to inventory with id
     int id = nextId++;
     instruments[id] = instrument;
@@ -35,7 +36,9 @@ void Inventory::displayInventory() const {
     budget.displayBudget();
     std::cout << "Instruments\n\t";
     for(const auto& ins : instruments) {
-        std::cout << ins.first << ". Instrument: " << ins.second << "\n\t";
+
+        std::cout << ins.first << ". Instrument: " <<ins.second->returnName() << " $" << ins.second->returnCost() << "\n\t";
     }
+
     std::cout << endl;
 }
