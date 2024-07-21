@@ -20,6 +20,8 @@ public:
 
     virtual double returnCost() = 0;
 
+    virtual string returnName() = 0;
+
     static Instrument* createInstrument();
 };
 
