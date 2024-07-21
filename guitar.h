@@ -14,6 +14,7 @@ public:
     void removeSelection(map<string, double> selectedItems);
     void displayMap();
     double returnCost();
+    string returnName();
 };
 
 #endif // GUITAR_H
