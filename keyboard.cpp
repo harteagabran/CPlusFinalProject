@@ -47,3 +47,7 @@ void Keyboard::displayMap() {
 double Keyboard::returnCost() {
     return keyboardCost;
 }
+
+string Keyboard::returnName() {
+    return name;
+}
