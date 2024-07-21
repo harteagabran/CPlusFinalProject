@@ -47,3 +47,8 @@ void Guitar::displayMap() {
 double Guitar::returnCost() {
     return guitarCost;
 }
+
+string Guitar::returnName() {
+    return name;
+}
+
