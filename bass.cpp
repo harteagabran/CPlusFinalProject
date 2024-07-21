@@ -1,50 +1,56 @@
-#include "bass.h"
+#include "drumset.h"
 
-Bass::Bass(string name, double bassCost) : name(name), bassCost(bassCost) {}
+Drumset::Drumset(string name, double drumCost) : name(name), drumCost(drumCost) {}
 
-void Bass::printSelection(map<string, double> selectedItems) {
-    map<string, double>basses;
-    basses["Jazz"] = 799;
-    basses["Precision"] = 799;
-    basses["Vibe"] = 469;
-    basses["StingRay5"] = 2699;
+void Drumset::printSelection(map<string, double> selectedItems) {
+    map<string, double>drumsets;
 
-    if (basses.count(name) > 0) {
-        cout << "You have selected " << name << " which costs $" << bassCost << endl;
-        selectedItems[name] = bassCost;
+    drumsets["Backbeat-Elite"] = 799;
+    drumsets["Dominion-Birch"] = 799;
+    drumsets["Centenial-Zep"] = 1299;
+    drumsets["RGD0520"] = 799;
+
+    if (drumsets.count(name) > 0) {
+        cout << "You have selected " << name << " which costs $" << drumCost << endl;
+        selectedItems[name] = drumCost;
     }
     else {
         cout << name << " is not an available option please try again." << endl;
-        bassCost = 0;
+        drumCost = 0;
     }
 }
 
-void Bass::removeSelection(map<string, double> selectedItems) {
+void Drumset::removeSelection(map<string, double> selectedItems) {
     if (selectedItems.count(name) > 0) {
         cout << " You have removed" << name << " from the budget." << endl;
         selectedItems.erase(name);
     } else {
         cout << name << " not found." << endl;
-        bassCost = 0;
+        drumCost = 0;
     }
 }
 
-void Bass::displayMap() {
-    map<string, double>basses;
-    basses["Jazz"] = 799;
-    basses["Precision"] = 799;
-    basses["Vibe"] = 469;
-    basses["StingRay5"] = 2699;
+void Drumset::displayMap() {
+    map<string, double>drumsets;
 
-    std::map<string, double>::iterator it = basses.begin();
+    drumsets["Backbeat-Elite"] = 799;
+    drumsets["Dominion-Birch"] = 799;
+    drumsets["Centenial-Zep"] = 1299;
+    drumsets["RGD0520"] = 799;
 
-    while (it != basses.end()) {
-        cout << "Bass Name: " << it->first
+    map<string, double>::iterator it = drumsets.begin();
+
+    while (it != drumsets.end()) {
+        cout << "Drumset Name: " << it->first
              << ", Cost: $" << it->second << endl;
         ++it;
     }
 }
 
-double Bass::returnCost() {
-    return bassCost;
+double Drumset::returnCost() {
+    return drumCost;
+}
+
+string Drumset::returnName() {
+    return name;
 }
