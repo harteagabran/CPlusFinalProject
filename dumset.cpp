@@ -50,3 +50,7 @@ void Drumset::displayMap() {
 double Drumset::returnCost() {
     return drumCost;
 }
+
+string Drumset::returnName() {
+    return name;
+}
